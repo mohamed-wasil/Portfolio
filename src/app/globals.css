@@ -2,32 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+html::-webkit-scrollbar-track {
+  background: #222;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html::-webkit-scrollbar-thumb {
+  background: #444;
+  /* border-radius: 5px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25); */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.active {
+
+  /* background: var(--cr-primary); */
+  background: #4974b9;
+  border-radius: 10px;
+  color: #fff;
+}  
+
+
+
+.swiper {
+  padding-bottom: 30px;
+  padding-top: 80px !important;
+  width: 100%;
+  overflow:visible ;
+
 }
+
+.swiper-slide {
+  overflow:visible ;
+  width: 300px !important;
+  background: #333;
+}
+
+#mouseCircle {
+  position: absolute;
+  background: #343f55;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 40%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .7;
+  
+}
+
+
