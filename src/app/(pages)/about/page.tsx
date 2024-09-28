@@ -1,4 +1,3 @@
-
 import React from 'react'
 import aboutCss from "./about.module.css"
 import Link from 'next/link'

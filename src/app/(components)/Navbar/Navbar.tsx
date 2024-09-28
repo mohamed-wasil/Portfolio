@@ -48,7 +48,6 @@ export default function Navbar() {
                         <div className={navbarCss.profile_logo}>
                             <Image className='w-full inline-block me-3' src={require("../../profile_logo.jpg")} alt='profile_logo' />
                         </div>
-                        {/* <img src={require("../../profile_image.jpg")} alt="profile_logo" /> */}
                         <Link href='/home'>Portfo<span>lio</span></Link>
                     </div>
 

@@ -3,7 +3,6 @@ import HomePageComponent from './(components)/HomePageComponent/HomePageComponen
 
 export default function page() {
     return <>
-
         <HomePageComponent />
     </>
 }

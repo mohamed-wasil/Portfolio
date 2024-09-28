@@ -166,6 +166,23 @@ export default function page() {
                             <div className={projectsCss.image}>
                                 <div className={projectsCss.img}>
                                     <div className='inline-block text-transparent'>
+                                        <Image className='w-full' src={require("../../images/movieApp.png")} alt='movie-app' />
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={projectsCss.title}>Movie App</p>
+                            <span className={projectsCss.desc}>My simple project Movies Is ( 18 ) pages using React</span>
+
+                            <div className={projectsCss.btns}>
+                                <Link href='https://block-bostermovies-git-master-mohamed-wasils-projects.vercel.app/' >Vist</Link>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={projectsCss.card}>
+                            <div className={projectsCss.image}>
+                                <div className={projectsCss.img}>
+                                    <div className='inline-block text-transparent'>
                                         <Image className='w-full' src={require("../../images/ecommerce.png")} alt='shopping' />
                                     </div>
                                 </div>
